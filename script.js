@@ -1,11 +1,9 @@
-
 let clock = document.querySelector(".clock");
 
 let sec = 0,
     min = 0,
     hr = 0,
     intervalID;
-
 const startStopwatch = () => {
     intervalID = setInterval(() => {
         if (sec < 59) {
@@ -13,20 +11,18 @@ const startStopwatch = () => {
         } else if (min >= 59) {
             hr++;
             min = 0;
-        }
-        else {
+        } else {
             sec = 0;
             min++;
         }
 
-        const seconds = sec.toString().padStart(2, "0");
-        const minutes = min.toString().padStart(2, "0");
-        const hours = hr.toString().padStart(2, "0");
+        const second = sec.toString().padStart(2, "0");
+        const minute = min.toString().padStart(2, "0");
+        const hour = hr.toString().padStart(2, "0");
 
-        clock.innerText = `${hours}:${minutes}:${seconds}`
-
-    }, 1000);
-};
+        clock.innerText = `${hour}:${minute}:${second}`
+    }, 1000)
+}
 
 const stopStopwatch = () => {
     clearInterval(intervalID);
