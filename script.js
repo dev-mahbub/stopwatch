@@ -24,6 +24,5 @@ const startStopwatch = () => {
     }, 1000)
 }
 
-const stopStopwatch = () => {
-    clearInterval(intervalID);
+f    clearInterval(intervalID);
 }

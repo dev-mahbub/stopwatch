@@ -20,6 +20,14 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.btn {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     padding: 20px;
     font-size: 1.5rem;
